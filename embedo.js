@@ -1060,8 +1060,6 @@
     }
 
     embed_uri += '?' + Embedo.utils.querystring(query)
-    // embed_uri += '?' + Embedo.utils.querystring(query) + `&access_token=180015362652616|fb4b1e9203a607f5e9d9d49c666ee200`
-
     var method = options.jsonp ? 'jsonp' : 'ajax'
 
     Embedo.utils[method](embed_uri, function (err, content) {
